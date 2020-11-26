@@ -110,7 +110,7 @@ function func_7(numberToIp){
     let IP = []
 
     for(let i  = 8; i <= 32; i += 8){
-        // take each 8-bits binary code add convert it to decimal number 
+        // take each 8-bits binary code and convert it to decimal number 
         IP.push(parseInt(binaryCode.slice(i - 8, i).join(''), 2))
     }
 
