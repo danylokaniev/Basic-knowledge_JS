@@ -1,11 +1,11 @@
-function func_1(arr) {
+function filterIntegerList(arr) {
     // just check if given element is number
     return arr.filter(elem => Number.isInteger(elem))
 }
 
-// console.log(func_1([1,'1','536', 123, 'ds']))
+console.log(filterIntegerList([1,'1','536', 123, 'ds']))
 
-function func_2(string) {
+function firstNonRepeatingLetter(string) {
     for(let i = 0; i < string.length;  i++){
         //if we find letter that doesn't appear in the remaining string return this letter and finish 
         if(!string.toLocaleLowerCase().includes(string[i].toLocaleLowerCase(), i + 1)){
@@ -15,10 +15,10 @@ function func_2(string) {
     return ''
 }
 
-// console.log(func_2('ssTrstsa'))
+console.log(firstNonRepeatingLetter('ssTrstsa'))
 
 
-function func_3(number){
+function digitalRoot(number){
     // convert given number to string
     number = number.toString()
     // if we get number with length 1 - finish recursion and return the result
@@ -26,13 +26,13 @@ function func_3(number){
         return number
     } else {
         // continue same algorithm, but with number that are sum of digits from current number
-        return func_3(number.split('').reduce((a,b) => (+a) + (+b)))
+        return digitalRoot(number.split('').reduce((a,b) => (+a) + (+b)))
     }
 }
 // console.log(func_3(4564897))
 
 
-function func_4(arr, target) {
+function numberOfPairs(arr, target) {
     // create variable which will contain amount of pairs 
     let amountOfPairs = 0
 
@@ -46,10 +46,10 @@ function func_4(arr, target) {
     return amountOfPairs
 }
 
-// console.log(func_4([1, 3, 6, 2, 2, 0, 4, 5], 5))
+console.log(numberOfPairs([1, 3, 6, 2, 2, 0, 4, 5], 5))
 
 
-function func_5(string) {
+function listOfFrieds(string) {
     // split string to object
     return string.split(';').map(human => ({
         // each human will contain firstName and secondName fields
@@ -70,10 +70,10 @@ function func_5(string) {
         .join('')
 }
 
-// console.log(func_5('Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Turnbull;Raphael:Corwill;Alfred:Corwill'))
+console.log(listOfFrieds('Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Turnbull;Raphael:Corwill;Alfred:Corwill'))
 
 
-function func_6(number) {
+function nextBiggerNumber(number) {
     // split number to array
     let num = number.toString().split('')
 
@@ -95,10 +95,10 @@ function func_6(number) {
 }
 
 
-// console.log(func_6(2017))
+console.log(nextBiggerNumber(2017))
 
 
-function func_7(numberToIp){
+function representationIP(numberToIp){
     // convert given number to binary code
     let binaryCode = numberToIp.toString(2)
     // add zeroes to complete 32 bits 
@@ -119,4 +119,4 @@ function func_7(numberToIp){
     return IP.join('.')
 }
 
-// console.log(func_7(591))
+console.log(representationIP(591))
