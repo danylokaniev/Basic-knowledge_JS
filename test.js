@@ -3,7 +3,7 @@ function filterIntegerList(arr) {
     return arr.filter(elem => Number.isInteger(elem))
 }
 
-console.log(filterIntegerList([1,'1','536', 123, 'ds']))
+// console.log(filterIntegerList([1,'1','536', 123, 'ds']))
 
 function firstNonRepeatingLetter(string) {
     for(let i = 0; i < string.length;  i++){
@@ -15,7 +15,7 @@ function firstNonRepeatingLetter(string) {
     return ''
 }
 
-console.log(firstNonRepeatingLetter('ssTrstsa'))
+// console.log(firstNonRepeatingLetter('ssTrstsa'))
 
 
 function digitalRoot(number){
@@ -46,7 +46,7 @@ function numberOfPairs(arr, target) {
     return amountOfPairs
 }
 
-console.log(numberOfPairs([1, 3, 6, 2, 2, 0, 4, 5], 5))
+// console.log(numberOfPairs([1, 3, 6, 2, 2, 0, 4, 5], 5))
 
 
 function listOfFrieds(string) {
@@ -70,7 +70,7 @@ function listOfFrieds(string) {
         .join('')
 }
 
-console.log(listOfFrieds('Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Turnbull;Raphael:Corwill;Alfred:Corwill'))
+// console.log(listOfFrieds('Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Turnbull;Raphael:Corwill;Alfred:Corwill'))
 
 
 function nextBiggerNumber(number) {
@@ -95,7 +95,7 @@ function nextBiggerNumber(number) {
 }
 
 
-console.log(nextBiggerNumber(2017))
+// console.log(nextBiggerNumber(2017))
 
 
 function representationIP(numberToIp){
@@ -119,4 +119,4 @@ function representationIP(numberToIp){
     return IP.join('.')
 }
 
-console.log(representationIP(591))
+// console.log(representationIP(591))
